@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Nombre de diplômé selon label</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+</div>
+
+
+<body>
+<b><h2><FONT size="7">Nombre de personne diplômée de cette tranche d'âge depuis 1968</FONT></h2></b>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+{% for i in d %}
+<p><FONT size="5">Saviez vous qu'il y avait {{i[0]}} personnes diplômées de cet âge depuis 1968 en France ?</FONT><p>
+{% endfor %}
+
+<br>
+<br>
+<br>
+<br>
+
+<img src="https://media1.tenor.com/images/c7eac59fb909510e714e85de277ca81a/tenor.gif?itemid=5139389" height = 40%>
+
+</ul>
+
+</body>
+</html>

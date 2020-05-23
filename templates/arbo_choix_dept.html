@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Nb diplômé selon département</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+</div>
+
+
+
+<body>
+
+<b><h2><FONT size="7">Nombre de personne diplômée dans ce département :</FONT></h2></b>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p><FONT size="5">Dans ce département, il y a eu {{nombresdiplomes[0][1]}} personnes non diplômées ou qui n'ont eut qu'un BEPC depuis 1968 !</FONT></p>
+<p><FONT size="5">Contre {{nombresdiplomes[1][1]}} personnes diplômées d'un BEP/CAP depuis cette année là !</FONT></p>
+<p><FONT size="5">On retrouve également {{nombresdiplomes[2][1]}} personnes diplômées d'un Baccalauréat !</FONT></p>
+<p><FONT size="5">Et finalement {{nombresdiplomes[3][1]}} personnes qui ont suivi un enseignement supérieur !</FONT></p>
+
+<br>
+<p><FONT size="5">Ce qui nous fait un total de {{nombresdiplomes[0][1]+nombresdiplomes[1][1]+nombresdiplomes[2][1]+nombresdiplomes[3][1]}} diplômés dans ce département !
+
+<br><br><br>
+<img src="https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcap.2F2019.2F04.2F10.2Fd6b8edec-05a6-4215-9423-cab3811dca7d.2Ejpeg/750x375/background-color/ffffff/quality/70/cadres-7-chiffres-qui-demontrent-que-les-jeunes-diplomes-nont-pas-de-soucis-a-se-faire-1334775.jpg" height = 40%>
+<img src="https://media.giphy.com/media/3oEdv3jDLP7XcpL2Wk/giphy.gif" height = 40%>
+</body>
+</html>

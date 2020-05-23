@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Choix cursus</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+	<div style="text-align:left">
+	<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+	</div>
+
+<h1><FONT size="7">Choix du cursus</FONT></h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><FONT size="5">Veuillez choisir un label/diplôme pour obtenir le nombre de personne qui l'a obtenu chaque année en France !</FONT></p>
+<p><FONT size="5">(À noter que vous obtiendrez une liste rangée par ordre croissant selon le nombre de diplômé)</FONT></p>
+<br>
+<br>
+<br>
+<br>
+<body>
+<form method="POST" action="{{url_for('nb_par_annee')}}">
+	<select name="niveaudiplome">
+		{% for p in g%}
+		<option value="{{p[0]}}">{{p[0]}}</option>
+		{% endfor %}
+	</select>
+	<input type="submit" value="Soumettre">
+</form>
+</body>
+<br>
+<br>
+<br>
+<br>
+
+<img src="https://www.oriane.info/sites/default/files/2017-12/dipl%C3%B4mes%20%C2%A9leolintang.jpg" alt="" height=35%/>
+
+</body>
+</html>

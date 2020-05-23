@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Choix âge + diplôme</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+</div>
+
+<body>
+
+		<h1>Veuillez sélectionner un âge et un niveau de diplôme :</h1>
+
+<br></br>
+<br></br>
+		<form method="POST" action="{{url_for('dip_2')}}">
+		  <select name="tranches_ages">
+			{% for a in tranches_ages %}
+		    		<option value="{{a[0]}}" >{{a[1]}}</option>
+			{% endfor %}
+		  </select>
+		  <select name="diplomes">
+			{% for d in diplomes %}
+		    		<option value="{{d[0]}}" >{{d[1]}}</option>
+			{% endfor %}
+		  </select>
+		  <input type="submit" value="Soumettre"/>
+		</form>
+
+		<br><br>
+		<br><br>
+
+	<img src="https://www.oriane.info/sites/default/files/2017-12/dipl%C3%B4mes%20%C2%A9leolintang.jpg" height='35%' >
+	<img src="https://www.referencement-google-gratuit.com/wp-content/uploads/2016/10/Nom-de-domaine-age.jpg" height ='35%' >
+
+	</body>
+
+</html>

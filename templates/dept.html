@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Liste département</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+</div>
+
+
+<body>
+<br></br>
+
+<b><h2><FONT size="7">Bienvenue sur cette région !</FONT></h2></b>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>Voici la liste de ses départements : </p>
+<br>
+{% for i in dept %}
+<p>{{i[0]}}<p>
+{% endfor %}
+
+
+</body>
+</html>

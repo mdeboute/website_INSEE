@@ -1,0 +1,20 @@
+body{
+background-image: url(http://www.wallpapers-mania.org/images/Deco/fond-page-web-planches-noires-verticales.jpg);
+text-align:center;
+}
+p{text-align:center;
+color:white;
+text-align:center;
+size:"3";}
+
+h1{
+text-align:center;
+color:red;}
+h2{
+text-align:center;
+color:green;}
+
+img{
+float:center;}
+
+

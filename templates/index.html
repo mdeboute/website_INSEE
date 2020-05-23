@@ -1,0 +1,32 @@
+<html>
+
+<head>
+		<title>Accueil du projet</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<img src="https://geneinfos.typepad.fr/.a/6a00d83534858069e2012876f518ee970c-800wi" alt="Nouveau !" height="7%"/>
+</div>
+
+
+<h1>Bienvenue sur la page d'accueil !</h1>
+
+<p>ARVY Pierre & DEBOUTÉ Martin</p>
+<P>Travail encadré par Monsieur Pierre HANNA</p>
+
+<br></br>
+
+<img src="http://hgchanal.blog.ac-lyon.fr/wp-content/uploads/sites/3/2014/11/13-r%C3%A9gions.jpg" height=50% >
+
+<br></br>
+
+
+<p><b><a href="{{url_for('regions')}}" style="color:green;"><FONT size="5"> Liste des régions </FONT></a></b></p>
+<p><b><a href="{{url_for('dip')}}" style="color:green;"><FONT size="5"> Liste des départements avec plus de femmes diplômées que d'hommes  </FONT></a></b></p>
+<p><b><a href="{{url_for('choix_de_l_age')}}" style="color:green;"><FONT size="5"> Nombre de diplômé par tranche d'âge depuis 1968 </FONT></a></b></p>
+<p><b><a href="{{url_for('choix_cursus')}}" style="color:green;"><FONT size="5"> Nombre de diplômé chaque année selon le label </FONT></a></b></p>
+<p><b><a href="{{url_for('choix_dept')}}" style="color:green;"><FONT size="5"> Nombre de diplômé par label selon le département </FONT></a></b></p>
+
+</html>

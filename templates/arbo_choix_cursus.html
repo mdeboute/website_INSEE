@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Nombre diplomé selon le cursus</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+</div>
+
+<body>
+<b><h2><FONT size="7">Nombre de diplomé chaque année selon le label</FONT></h2></b>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<img src="https://www.gembloux.uliege.be/upload/docs/image/jpeg/2018-09/portail_diplome.jpg" alt="" height=35% >
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% for i in b %}
+<p><FONT size="5">En {{i[0]}}, {{i[1]}} personnes ont obtenu ce diplôme en France !</FONT></p>
+{% endfor %}
+
+
+</body>
+</html>

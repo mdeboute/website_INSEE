@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Liste régions</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='monfichier.css')}}">
+
+<div style="text-align:left">
+<a href="{{url_for('hello')}}"><img src="http://www.myhomephone.fr/1105-large_default/reparation-bouton-home-iphone-5c.jpg" height="5%" alt="Accueil"/></a>
+</div>
+
+<body>
+<b><h1><FONT size="7">Selectionnez une région pour obtenir la liste de ses départements</FONT></h1></b>
+
+
+<br>
+<br>
+<br>
+<img src="https://www.bed-and-breakfast.it/img/tipologie-viaggio/campagna/evidenza/toscana.jpg" height=45% >
+<img src="http://s1.1zoom.me/b5050/651/Warsaw_Poland_Houses_511360_800x600.jpg" height=45% >
+
+<br>
+<br>
+
+{% for p in regions %}
+<p><li><a href="{{url_for('listedept',numregion=p[0])}}" style="color:white;">{{p[0]}}</a></li></p>
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
